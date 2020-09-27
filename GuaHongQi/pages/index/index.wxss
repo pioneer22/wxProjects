@@ -1,0 +1,25 @@
+/**index.wxss**/
+
+.btn-view{
+  display:flex;
+  justify-content:space-around;
+  width:100vw;
+  padding-bottom: 50rpx;
+}
+
+.container image{
+  width:50vw;
+  height:50vw;
+
+  margin: 10px auto;
+  border:1px dashed #fff;
+}
+
+/* 将画布隐藏起来 */
+canvas { 
+  position: fixed;
+  top: 0;
+  left: 1024px;
+  width: 1024px;
+  height: 1024px;
+}

@@ -1,0 +1,18 @@
+<canvas canvas-id="getImg"></canvas>
+<view class="container">
+  <view class="btn-view">
+    <button type="primary" size="mini" open-type="getUserInfo" bindgetuserinfo="generateImg" data-index="1">头像挂方</button>
+    <button type="warn" size="mini" open-type="getUserInfo" bindgetuserinfo="generateImg" data-index="2">头像挂圆</button>
+
+    <button type="primary" size="mini" bindtap="saveImg">保存图片</button>
+  </view>
+  
+  <view class="btn-view">
+    <button type="warn" size="mini" bindtap="uploadImg">上传不挂</button>
+    <button type="primary" size="mini" bindtap="uploadImg" data-index="1">上传挂方</button>
+    <button type="warn" size="mini" bindtap="uploadImg" data-index="2">上传挂圆</button>
+  </view>
+
+  <image src="{{ imgUrl }}"></image>
+</view>
+

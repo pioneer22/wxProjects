@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body input-view">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input input-padding">
+          <input class="weui-input" auto-focus placeholder="输入生成内容" bindinput="bindKeyInput" value="{{ qrvalue }}"/>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-view">
+    <button type="primary" size="mini" class="btn" bindtap="generateQR">生成二维码</button>
+    <button type="warn" size="mini" class="btn" bindtap="saveQR">保存图片</button>
+  </view>
+
+  <view class="canvas-view">
+    <canvas canvas-id="qrcode" class="canvas"></canvas>
+  </view>
+  
+</view>

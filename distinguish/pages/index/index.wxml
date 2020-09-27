@@ -1,0 +1,41 @@
+<view class="view">
+  <button bindtap="distinguishCard" type="primary" size="mini" data-type="1">识别银行卡</button>
+  <button bindtap="distinguishCard" type="warn" size="mini" data-type="2">识别身份证</button>
+  <button bindtap="distinguishCard" type="primary" size="mini" data-type="3">识别驾驶证</button>
+  <button bindtap="distinguishCard" type="warn" size="mini" data-type="4">识别营业证</button>
+</view>
+
+<view class="img-view">
+  <image src="{{ imgUrl }}"></image>
+</view>
+
+<view wx:if="{{ type == 1 }}" class="show-mess">
+  <text><text class="fontSize">银行卡号：</text>{{card}}</text>
+</view>
+
+<view wx:if="{{ type == 2 }}" class="show-mess">
+  <text><text class="fontSize">姓名：</text>  {{pname}}</text>
+  <text><text class="fontSize">地址：</text>  {{addr}}</text>
+  <text><text class="fontSize">性别：</text>  {{gender}}</text>
+  <text><text class="fontSize">证件号：</text>{{id}}</text>
+</view>
+
+<view wx:if="{{ type == 3 }}" class="show-mess">
+  <text><text class="fontSize">姓名：</text>  {{dname}}</text>
+  <text><text class="fontSize">地址：</text>  {{daddress}}</text>
+  <text><text class="fontSize">生日：</text>  {{birthDate}}</text>
+  <text><text class="fontSize">等级：</text>  {{carClass}}</text>
+  <text><text class="fontSize">性别：</text>  {{sex}}</text>
+  <text><text class="fontSize">证件号：</text>{{idNum}}</text>
+  <text><text class="fontSize">有效期：</text>{{validFrom}} {{validTo}}</text>
+</view>
+
+<view wx:if="{{ type == 4 }}" class="show-mess">
+  <text><text class="fontSize">地址：</text>{{address}}</text>
+  <text><text class="fontSize">经营范围：</text>{{businessScope}}</text>
+  <text><text class="fontSize">公司名：</text>{{enterpriseName}}</text>
+  <text><text class="fontSize">法定代表：</text>{{legalRepresentative}}</text>
+  <text><text class="fontSize">注册资本：</text>{{registeredCapital}}</text>
+  <text><text class="fontSize">注册号：</text>{{regNum}}</text>
+  <text><text class="fontSize">成立时间：</text>{{registeredDate }}</text>
+</view>

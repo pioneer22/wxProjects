@@ -1,0 +1,37 @@
+/**index.wxss**/
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:24rpx;
+}
+
+.input-view{
+  border:1px solid gray;
+  width:70vw;
+  border-radius:5px;
+}
+
+.input-padding{
+  padding-left:5px;
+}
+
+.btn-view{
+  display:flex;
+  justify-content:space-around;
+  width:70vw;
+  padding:10px 0;
+}
+
+.btn{
+  width:30vw;
+}
+
+.canvas-view{
+  border:1px dashed gray;
+}
+
+.canvas{
+  width:496rpx;
+  height:496rpx;
+}

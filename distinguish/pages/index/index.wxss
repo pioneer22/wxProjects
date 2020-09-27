@@ -1,0 +1,38 @@
+/**index.wxss**/
+.view{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+}
+
+button[size=mini] {
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+.img-view{
+  margin:auto;
+  width:80vw;
+  border:1px dashed gray;
+}
+
+.img-view image{
+  max-width:80vw;
+  max-height:80vw;
+}
+
+.show-mess{
+  margin:auto;
+  width:80vw;
+  padding:10px 0;
+  display:flex;
+  flex-direction:column;
+  font-size: 12px;
+  line-height:150%;
+  color:gray;
+}
+
+.fontSize{
+  font-weight: bold;
+  color:black;
+}
